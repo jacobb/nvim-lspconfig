@@ -7,7 +7,7 @@ local root_files = {
 
 return {
   default_config = {
-    cmd = { 'ruff server' },
+    cmd = { 'ruff', 'server' },
     filetypes = { 'python' },
     root_dir = util.root_pattern(unpack(root_files)) or util.find_git_ancestor(),
     single_file_support = true,
